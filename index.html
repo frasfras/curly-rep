@@ -30,9 +30,11 @@
             <table id="myTable" class="table">
               <thead>
                 <tr>
-                  <th scope="col">Alert</th>
-                  <th scope="col">Keywords</th>
-                  <th scope="col">Sent</th>
+                  <th scope="col">create Alert</th>
+                  <th scope="col">Other Keywords</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Specific url /Sent</th>
+                  <th scope="col">Sent</th>  
                 </tr>
               </thead>
               <tbody>
@@ -47,7 +49,9 @@
               </tbody>
             </table> 
             <form method="POST" action="/api/alert">
-                <label for="expression">Create Alert</label>
+                <label for="expression">Alert name</label>
+                <input class="form-control" type="textarea" lines="4" id="expression" name="expression">
+                 <label for="expression">Keywords</label>
                 <input class="form-control" type="textarea" lines="4" id="expression" name="expression">
            <!--     <button type="submit" class="btn btn-primary">Cancel</button>-->
                 <button type="submit" class="btn btn-primary">Continue</button>
