@@ -30,22 +30,28 @@
             <table id="myTable" class="table">
               <thead>
                 <tr>
-                  <th scope="col">Link</th>
-                  <th scope="col">Summary</th>
+                  <th scope="col">Alert</th>
+                  <th scope="col">Keywords</th>
                   <th scope="col">Sent</th>
                 </tr>
               </thead>
               <tbody>
-                {{#payload}}
+            <!--    {{#payload}} 
                 <tr class="table-primary">
                   <td><a href="{{link}}">{{title}}</a></td>
                   <td>{{description}}</td>
-                  <td>{{sent}}</td>
+                  <td>{{sent}}</td>-->
             <!-- <td><button onclick="myFunction()">Copy text</button></td>-->
                 </tr>
-                {{/payload}}
+            <!--    {{/payload}}-->
               </tbody>
             </table> 
+            <form method="POST" action="/api/alert">
+                <label for="expression">Create Alert</label>
+                <input class="form-control" type="textarea" lines="4" id="expression" name="expression">
+           <!--     <button type="submit" class="btn btn-primary">Cancel</button>-->
+                <button type="submit" class="btn btn-primary">Continue</button>
+            </form>
         </div>
     </div>
 </div>
