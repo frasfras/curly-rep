@@ -1,0 +1,310 @@
+/*custom font*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: montserrat, arial, verdana;
+    background: transparent;
+}
+
+.sch-gallery {
+    margin: 0 auto;
+}
+
+
+/* Not relevant to this form */
+
+.dme_link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dme_link a {
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+}
+
+.dme_link a:hover,
+.dme_link a:focus {
+    background: #C5C5F1;
+    text-decoration: none;
+}
+
+.pp-setting {
+    display: block;
+    position: fixed;
+    top: 10%;
+    right: 0px;
+    width: 260px;
+    box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.59);
+    z-index: 99;
+}
+
+.pp-setting .icon {
+    position: fixed;
+    margin-top: -13.5px;
+    border-radius: 100%;
+    top: 25px;
+    left: auto;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 32px;
+    text-align: center;
+    box-shadow: -2px 0px 3px rgba(68, 68, 68, 0.59);
+    cursor: pointer;
+    right: 93px;
+}
+
+.pp-setting,
+.pp-setting .icon {
+    background-color: #fff;
+}
+
+.pp-setting .icon i {
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.pp-header::before {
+    border-bottom: 11px solid rgba(35, 122, 87, 0.2);
+    border-left: 11px solid rgba(35, 122, 87, 0);
+    border-right: 11px solid rgba(35, 122, 87, 0);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: auto;
+    margin-left: auto;
+    top: -11px;
+}
+
+.pp-header {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(9, 48, 40), rgb(35, 122, 87)) repeat scroll 0% 0%;
+}
+
+.pp-setting .pp-header h4 {
+    margin-bottom: 0rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 0;
+}
+
+.pp-setting .link {
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.pp-setting .link img {
+    border-radius: 6px;
+    width: 140px;
+    max-height: 65px;
+    border: 4px solid #FFFFFF;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.pp-setting .link li:hover img {
+    border-color: #00bbff;
+}
+
+.pp-setting .link li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pp-setting .link li i {
+    margin-right: 5px;
+}
+
+.pp-setting .link li a {
+    font-size: 15px;
+}
+
+.pp-setting .link li a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: font-weight .3s ease-in-out;
+    -moz-transition: font-weight .3s ease-in-out;
+    -o-transition: font-weight .3s ease-in-out;
+    transition: font-weight .3s ease-in-out;
+}
+
+.pp-setting .icon,
+.pp-setting .link li a {
+    font-size: 12px;
+    color: #555;
+}
+
+.pp-setting .pp-color {
+    padding: 12px;
+    text-align: center;
+}
+
+.pp-setting .pp-color span {
+    display: inline-block;
+    margin: 5px;
+    width: 24px;
+    height: 20px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.color-black {
+    color: #111;
+}
+
+.color-red {
+    color: #fa163f;
+}
+
+.color-orange {
+    color: #df7861;
+}
+
+.color-brown {
+    color: #42240c;
+}
+
+.color-yellow {
+    color: #ffd800;
+}
+
+.color-green {
+    color: #21bf73;
+}
+
+.color-turquoise {
+    color: #05dfd7;
+}
+
+.color-blue {
+    color: #00a8cc;
+}
+
+.color-purple {
+    color: #3e206d;
+}
+
+.color-pink {
+    color: #faafff;
+}
+
+.color-grey {
+    color: #e5dfdf;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #555;
+    display: inline-block;
+    margin: 0 0 0 0.2em;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.pp-setting .pp-color span.color1 {
+    background: #111;
+}
+
+.pp-setting .pp-color span.color2 {
+    background: #fa163f;
+}
+
+.pp-setting .pp-color span.color3 {
+    background: #df7861;
+}
+
+.pp-setting .pp-color span.color4 {
+    background: #42240c;
+}
+
+.pp-setting .pp-color span.color5 {
+    background: #ffd800;
+}
+
+.pp-setting .pp-color span.color6 {
+    background: #21bf73;
+}
+
+.pp-setting .pp-color span.color7 {
+    background: #05dfd7;
+}
+
+.pp-setting .pp-color span.color8 {
+    background: #00a8cc;
+}
+
+.pp-setting .pp-color span.color9 {
+    background: #3e206d;
+}
+
+.pp-setting .pp-color span.color10 {
+    background: #faafff;
+}
+
+.pp-setting .pp-color span.color11 {
+    background: #e5dfdf;
+}
+
+.pp-setting .pp-color span.color12 {
+    background: #fff;
+}
+
+.pp-setting .pp-color span.color1,
+.pp-setting .pp-color span.color2,
+.pp-setting .pp-color span.color3,
+.pp-setting .pp-color span.color4,
+.pp-setting .pp-color span.color5,
+.pp-setting .pp-color span.color6,
+.pp-setting .pp-color span.color7,
+.pp-setting .pp-color span.color8,
+.pp-setting .pp-color span.color9,
+.pp-setting .pp-color span.color10,
+.pp-setting .pp-color span.color11,
+.pp-setting .pp-color span.color12 {
+    box-shadow: 1px 2px 3px;
+}
+
+.sch-title-big {
+    padding: 100px 0;
+    text-align: center;
+}
+
+@media (min-width:640px) and (max-width:979px) {}
+
+@media (min-width:320px) and (max-width:639px) {
+    .sch-title-big {
+        padding: 50px 0;
+        text-align: center;
+    }
+}

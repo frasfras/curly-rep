@@ -1,0 +1,523 @@
+.steps {
+    margin-bottom: 23px;
+}
+
+.steps ul {
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {}
+
+.title {
+    color: #111;
+}
+
+.content h3 {
+    display: none;
+}
+
+.actions {
+    margin-top: 25px;
+}
+
+.actions .disabled {
+    display: none;
+}
+
+.actions ul {
+    margin-top: 10px;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.actions ul li {
+    list-style: none;
+    float: left;
+}
+
+.actions ul li:first-child a {
+    background: #adadad;
+}
+
+.actions ul li a {
+    width: 100px!Important;
+    background: #111;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+.actions ul li a:hover {
+    background-color: #f82d2a;
+}
+
+label.error {
+
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 99;
+
+}
+
+#first_name-error::after,#address-error::after  {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    content: '\f05a';
+    right: 15px;
+    top: 35px;
+    font-size: 16px;
+    color: #ff1212;
+}
+#email-error::after {
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    content: '\f05a';
+    right: 40px;
+    top: 30px;
+	font-size: 16px;
+    color: #ff1212;
+}
+input.error {
+    border: 1px solid #ff1212;
+}
+
+
+/*form styles*/
+
+.sch-style-1 #signup-form {
+    text-align: center;
+    position: relative;
+}
+
+.sch-style-1 #signup-form fieldset {
+    background: #fff;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    text-align: left;
+    color: #000;
+    position: relative;
+}
+
+.sch-style-1 .sch-star {
+    color: red;
+	margin-left: 10px;
+}
+
+
+/*Hide all except first fieldset*/
+
+.sch-style-1 #signup-form fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
+/*inputs*/
+
+.sch-style-1 #signup-form input,
+.sch-style-1 #signup-form textarea {
+    padding: 15px;
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+    border: none;
+    position: relative;
+}
+
+.sch-style-1 #signup-form input:focus,
+.sch-style-1 #signup-form textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #111;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+
+/*buttons*/
+
+.sch-style-1 #signup-form .actions ul li a {
+    width: 100px;
+    background: #111;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    text-decoration: unset;
+}
+
+.sch-style-1 #signup-form .actions ul li a:hover,
+.sch-style-1 #signup-form .actions ul li a:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #111;
+}
+
+.sch-style-1 #signup-form .actions ul li a-previous {
+    width: 100px;
+    background: #C5C5F1;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+.sch-style-1 #signup-form .actions ul li a-previous:hover,
+.sch-style-1 #signup-form .actions ul li a-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+.sch-style-1 .sch-input-next i,
+.sch-style-1 .sch-input-pre i {
+    position: absolute;
+    z-index: 1;
+    color: #000;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20px;
+    pointer-events: auto;
+    text-align: center;
+}
+
+.sch-style-1 .sch-input-next,
+.sch-style-1 .sch-input-pre {
+    display: inline-block;
+    position: relative;
+}
+
+
+/*headings*/
+
+.sch-style-1 .sch-title-form {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin: 30px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sch-style-1 .sch-subtitle-form {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/*progressbar*/
+
+.sch-style-1 .steps {
+    margin-bottom: 50px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+.sch-style-1 .steps::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 14px;
+    z-index: -1;
+    right: 0;
+    margin: 0 auto;
+}
+
+.sch-style-1 .steps li {
+    list-style-type: none;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 3px 5px rgba(50, 50, 0, 0.5));
+    text-align: center;
+}
+
+.sch-style-1 .steps li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    background: #000;
+    margin: 0 auto 10px auto;
+    font-weight: bold;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.sch-style-1 .steps li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+
+/*marking active/completed steps green*/
+
+
+/*The number of the step and the connector before it = green*/
+
+.sch-style-1 .steps li.current:before,
+.sch-style-1 .steps li.current:after {
+    background: #fff;
+    color: #111;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.sch-style-1 .steps li:last-child::before,
+.sch-style-1 .steps li:last-child::after {
+    clip-path: none;
+}
+
+.sch-radio-item-input-style-1,
+.sch-radio-item-input-style-2 {
+    display: none;
+}
+
+.sch-radio-item-input-style-1 + .sch-radio-item-label-style-1,
+.sch-radio-item-input-style-2 + .sch-radio-item-label-style-2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    position: relative;
+    whitespace: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    color: #000;
+    margin-bottom: 16px;
+    margin-right: 50px;
+}
+
+.sch-radio-item-input-style-1 + .sch-radio-item-label-style-1::before,
+.sch-radio-item-input-style-2 + .sch-radio-item-label-style-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.sch-radio-item-input-style-1 + .sch-radio-item-label-style-1::after,
+.sch-radio-item-input-style-2 + .sch-radio-item-label-style-2::after {
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background: #000;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    content: "";
+}
+
+.sch-radio-item-input-style-1:checked + .sch-radio-item-label-style-1::before,
+.sch-radio-item-input-style-2:checked + .sch-radio-item-label-style-2::before {
+    border-color: #000;
+    border: none;
+    background: #000;
+}
+
+.sch-radio-item-input-style-1:checked + .sch-radio-item-label-style-1::after,
+.sch-radio-item-input-style-2:checked + .sch-radio-item-label-style-2::after {
+    border-color: #000;
+    border: none;
+    background: #fff;
+    left: 8px;
+    top: 8px;
+}
+
+.sch-checkbox-item-input-style-1 {
+    display: none;
+}
+
+.sch-checkbox-item-input-style-1 + .sch-checkbox-item-label-style-1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    position: relative;
+    whitespace: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    color: #333;
+    margin-bottom: 16px;
+    margin-right: 50px;
+}
+
+.sch-checkbox-item-input-style-1 + .sch-checkbox-item-label-style-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.sch-checkbox-item-input-style-1 + .sch-checkbox-item-label-style-1::after {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    content: "";
+    background: #000;
+}
+
+.sch-checkbox-item-input-style-1:checked + .sch-checkbox-item-label-style-1::after {
+    border-color: white;
+    border: none;
+    background: #fff;
+}
+
+.sch-checkbox-item-input-style-1:checked + .sch-checkbox-item-label-style-1::before {
+    background: #000;
+}
+
+.sch-checkbox-item-input-style-1:checked + .sch-checkbox-item-label-style-1::after {
+    border-color: white;
+    border: none;
+    background: #fff;
+}
+
+.sch-style-1 .sch-form-select {
+    overflow: hidden;
+    margin: 0 auto 5px;
+    position: relative;
+    display: block;
+    padding: 0;
+    box-shadow: 1px 1px 3px #999;
+}
+
+.sch-style-1 .sch-form-select::placeholder {
+    color: #ccc;
+}
+
+.sch-style-1 .sch-form-select select {
+    border: none;
+    color: #000;
+    font-family: 'pt sans', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.sch-style-1 .sch-form-select select {
+    padding: 10px 6px;
+    margin-bottom: 0;
+}
+
+.sch-label-input,
+.sch-radio-form,
+.sch-checkbox-form,
+.sch-choose-form,
+.sch-label-textarea {
+    padding: 30px 0;
+    position: relative;
+}
+
+.sch-label-input label,
+.sch-radio-form label,
+.sch-checkbox-form label,
+.sch-choose-form label,
+.sch-label-textarea label {
+    font-family: 'Raleway', ;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.sch-style-1 .sch-note {
+    text-align: center;
+}
+
+@media (max-width:479px) {
+    .sch-label-input label,
+    .sch-radio-form label,
+    .sch-checkbox-form label,
+    .sch-choose-form label,
+    .sch-label-textarea label {
+        width: 100%;
+    }
+    .sch-note {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:480px) and (max-width:640px) {
+    .sch-radio,
+    .sch-checkbox {
+        display: inline-block;
+        width: 100%;
+    }
+    .sch-radio label,
+    .sch-checkbox label {
+        width: 50%;
+        float: left;
+    }
+    .sch-radio-item-input-style-1 + .sch-radio-item-label-style-1,
+    .sch-radio-item-input-style-4 + .sch-radio-item-label-style-4,
+    .sch-radio-item-input-style-5 + .sch-radio-item-label-style-5,
+    .sch-checkbox-item-input-style-3 + .sch-checkbox-item-label-style-3 {
+        margin-right: 0px;
+        font-size: 12px;
+    }
+}
