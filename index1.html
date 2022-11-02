@@ -1,0 +1,57 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+      <title>Boostrap Multistep Form</title>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style1.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+      <link id="sch-bg-color" rel="stylesheet" href="css/colors/color-blue.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<link href="//stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-FBPbZPVh+7ks5JJ70RJmIaqyGnvMbeJ5JQfEbW0Ac6ErfvEg9yG56JQJuMNptWsH" crossorigin="anonymous">
+<link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+      
+        <div class="container">
+<h1>Monitor</h1>
+    <div class="row">
+         <div class="col-md-4">
+   <!--<iframe src="http://localhost:3000/dashboard" height="1000"} width="100%" ></iframe>-->
+                 <img src="side.png" height="600" width="100%"></img>  
+             </div> 
+        <div class="col-md-8">
+            <table id="myTable" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Link</th>
+                  <th scope="col">Summary</th>
+                  <th scope="col">Sent</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#payload}}
+                <tr class="table-primary">
+                  <td><a href="{{link}}">{{title}}</a></td>
+                  <td>{{description}}</td>
+                  <td>{{sent}}</td>
+            <!-- <td><button onclick="myFunction()">Copy text</button></td>-->
+                </tr>
+                {{/payload}}
+              </tbody>
+            </table> 
+        </div>
+    </div>
+</div>
+</div>
+        <script>
+
+</script>
+  </body>
+</html> 
